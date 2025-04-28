@@ -28,7 +28,7 @@ class _FileDateFormatter:
         self.datetime = datetime or aware_now()
 
     def __format__(self, spec):
-        return self.datetime.__format__("%Y-%m-%d_%H%M%S%f")
+        return self.datetime.__format__("%Y-%m-%d")
 
 
 class _FileSink(_file_sink.FileSink):

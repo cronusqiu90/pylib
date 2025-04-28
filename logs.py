@@ -6,6 +6,7 @@ from loguru._logger import Logger as _Logger
 
 __all__ = ["getLogger", "init", "setLevel"]
 
+sys.tracebacklimit = 2
 _default_log_format = (
     "{time:YYYY/MM/DD HH:mm:ss.SSS} - "
     "[{level:>7}] - "

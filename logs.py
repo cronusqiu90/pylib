@@ -2,7 +2,6 @@
 import functools
 import os
 import sys
-import time
 
 from loguru import logger as _slog, _file_sink
 from loguru._datetime import aware_now
@@ -42,7 +41,6 @@ class _FileSink(_file_sink.FileSink):
 
         if is_rotating:
             new_path = self._create_path()
-            print("new_path=", new_path)
             self._create_dirs(new_path)
             self._create_file(new_path)
 
